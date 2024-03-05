@@ -34,6 +34,16 @@ class Task {
         if (this.dueDate) console.log("Due Date of task: ", this.dueDate);
         console.log("Status of task: ", this.status);
     }
+
+    getId() {
+        return this.id;
+    }
+
+    isEqual(task: Task) {
+        return this.id === task.getId()
+    }
+
+    //TODO - getters
     
 }
 
